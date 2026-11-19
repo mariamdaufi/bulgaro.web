@@ -1,0 +1,453 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF8F5;
+    color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Barra superior y menú */
+.barra-superior {
+    background-color: #FAF8F5;
+    border-bottom: 1px solid #E5E0D8;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.menu-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.menu-navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* Portada principal (Hero) */
+.portada {
+    position: relative;
+    background-color: #1E1E1E;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.portada img,
+.portada video {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    opacity: 0.55;
+    display: block;
+}
+
+.portada-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.portada-texto h2 {
+    font-size: 52px;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+}
+
+.portada-texto p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.boton-borde {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 10px 26px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.boton-borde:hover {
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+}
+
+/* Contenedor general de secciones */
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 25px;
+}
+
+/* Sección Menú */
+.seccion-menu {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.menu-intro {
+    width: 25%;
+}
+
+.menu-intro h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.linea-corta {
+    width: 35px;
+    height: 2px;
+    background-color: #9C7E63;
+    margin-bottom: 15px;
+}
+
+.menu-intro p {
+    font-size: 14px;
+    color: #5A5753;
+}
+
+.menu-contenido {
+    width: 75%;
+}
+
+.categorias-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.categorias-menu a:hover {
+    border-bottom: 2px solid #9C7E63;
+    padding-bottom: 4px;
+}
+
+.tarjetas-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 1px solid #ECE7DF;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 33.33%;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.tarjeta-info {
+    padding: 18px;
+}
+
+.tarjeta-info h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.tarjeta-info p {
+    font-size: 13px;
+    color: #5A5753;
+    margin-bottom: 12px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #1A1A1A;
+    font-size: 15px;
+}
+
+.nota-precios {
+    text-align: center;
+    font-size: 12px;
+    color: #5A5753;
+    margin-top: 22px;
+}
+
+/* Sección Nosotros / Filosofía */
+.fila-dos-columnas {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.columna-mitad {
+    width: 50%;
+}
+
+.columna-mitad img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.columna-mitad h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.columna-mitad h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #2B2B2B;
+}
+
+.columna-mitad p {
+    font-size: 15px;
+    color: #4A4744;
+    margin-bottom: 15px;
+}
+
+/* Sección Espacio (Franja Beige) */
+.franja-beige {
+    background-color: #EFECE6;
+    padding: 55px 0;
+}
+
+.franja-beige h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.subtitulo-espacio {
+    font-size: 14px;
+    color: #5A5753;
+    margin-bottom: 25px;
+}
+
+.galeria-espacio {
+    display: flex;
+    gap: 15px;
+}
+
+.galeria-espacio img {
+    width: 25%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Página interna Espacio (2 columnas con descripción) */
+.grilla-espacio-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item-espacio {
+    width: 48%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E0D8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-espacio img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.item-espacio-texto {
+    padding: 20px;
+}
+
+.item-espacio-texto h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.item-espacio-texto p {
+    font-size: 14px;
+    color: #5A5753;
+}
+
+/* Formulario de Contacto y Mapa */
+.formulario-contacto {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border: 1px solid #E5E0D8;
+    border-radius: 8px;
+}
+
+.formulario-contacto label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.formulario-contacto textarea {
+    height: 100px;
+}
+
+.boton-oscuro {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 28px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.boton-oscuro:hover {
+    background-color: #3C2A21;
+}
+
+iframe {
+    width: 100%;
+    border: 1px solid #E5E0D8;
+    border-radius: 8px;
+}
+
+/* Pie de página oscuro */
+.pie-pagina {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 45px 25px;
+    font-size: 13px;
+}
+
+.pie-columnas {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pie-columna {
+    width: 33.33%;
+}
+
+.pie-columna h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #E5E0D8;
+}
+
+.pie-columna p {
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.pie-columna a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   BREAKPOINTS (Tablet y Celular)
+   ========================================= */
+
+/* Tablet (hasta 768px) */
+@media (max-width: 768px) {
+    .barra-superior {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    .seccion-menu,
+    .fila-dos-columnas {
+        flex-direction: column;
+    }
+
+    .menu-intro,
+    .menu-contenido,
+    .columna-mitad {
+        width: 100%;
+    }
+
+    .galeria-espacio {
+        flex-wrap: wrap;
+    }
+
+    .galeria-espacio img {
+        width: 48%;
+    }
+
+    .item-espacio {
+        width: 100%;
+    }
+}
+
+/* Celular (hasta 480px) */
+@media (max-width: 480px) {
+    .menu-navegacion {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .portada-texto h2 {
+        font-size: 34px;
+    }
+
+    .tarjetas-grid,
+    .pie-columnas {
+        flex-direction: column;
+    }
+
+    .tarjeta,
+    .pie-columna,
+    .galeria-espacio img {
+        width: 100%;
+    }
+}

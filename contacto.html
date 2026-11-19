@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÚLGARO - Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="barra-superior">
+        <h1 class="logo"><a href="index.html">BÚLGARO</a></h1>
+        <ul class="menu-navegacion">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="menu.html">MENÚ</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="espacio.html">ESPACIO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="https://www.instagram.com/bulgaro" target="_blank">IG</a></li>
+        </ul>
+    </div>
+
+    <div class="contenedor">
+        <div class="fila-dos-columnas">
+            <div class="columna-mitad">
+                <h2>Contacto y Reservas</h2>
+                <div class="linea-corta"></div>
+                <p>Completá el formulario para consultarnos o reservar tu mesa.</p>
+
+                <form action="procesar.php" method="post" class="formulario-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresá tu email" required>
+
+                    <label for="personas">Cantidad de personas</label>
+                    <input type="number" id="personas" name="personas" placeholder="2">
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta"></textarea>
+
+                    <button type="submit" class="boton-oscuro">Enviar</button>
+                </form>
+            </div>
+
+            <div class="columna-mitad">
+                <h2>Dónde estamos</h2>
+                <div class="linea-corta"></div>
+                <p>Gorriti 4832, Palermo, CABA, Argentina</p>
+                <p>Lunes a Viernes: 8:00 a 20:00 | Sábados y Domingos: 9:00 a 20:00</p>
+
+                <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-58.4345%2C-34.5915%2C-58.4245%2C-34.5855&layer=mapnik&marker=-34.5885%2C-58.4295" 
+                    width="560" 
+                    height="350">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <div class="pie-columnas">
+            <div class="pie-columna">
+                <h3>ENCONTRANOS</h3>
+                <p>Gorriti 4832, Palermo,<br>CABA, Argentina</p>
+                <p>Lunes a Viernes 8:00 a 20:00<br>Sábados y Domingos: 9:00 a 20:00</p>
+            </div>
+
+            <div class="pie-columna">
+                <h3>REDES</h3>
+                <p><a href="https://www.instagram.com/bulgaro" target="_blank">Instagram<br>@bulgaro</a></p>
+            </div>
+
+            <div class="pie-columna">
+                <h3>CONTACTO</h3>
+                <p>WhatsApp<br>+54 11 1234 5678</p>
+                <p>Email<br>hola@bulgarocafe.com.ar</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
